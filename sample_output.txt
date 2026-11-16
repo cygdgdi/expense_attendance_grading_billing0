@@ -1,0 +1,387 @@
+SAMPLE OUTPUT - Expense, Attendance, Grading & Billing Management System
+Captured from a real run of: python main.py   (what the user typed appears after each prompt)
+Covers: menu validation, Expense, Attendance, Grading, Billing and Reports.
+======================================================================
+
+==============================================
+  EXPENSE | ATTENDANCE | GRADING | BILLING
+==============================================
+ 1. Expense Management
+ 2. Attendance Management
+ 3. Grading System
+ 4. Billing System
+ 5. View Reports
+ 6. Exit
+----------------------------------------------
+Enter your choice (1-6): abc
+Invalid choice. Enter 1-6.
+Enter your choice (1-6): 1
+
+--- EXPENSE MANAGEMENT ---
+ 1. Add Expense
+ 2. View All Expenses
+ 3. Expense Summary
+ 4. Back
+Enter your choice (1-4): 1
+
+===== ADD EXPENSE =====
+Description: Lunch
+Category (Food/Travel/Utilities/Stationery/Other): Food
+Amount: abc
+Amount must be a positive number.
+Amount: 250.50
+Expense added successfully!
+Add another expense? (yes/no): yes
+Description: Auto fare
+Category (Food/Travel/Utilities/Stationery/Other): Travel
+Amount: 120
+Expense added successfully!
+Add another expense? (yes/no): yes
+Description: Electricity bill
+Category (Food/Travel/Utilities/Stationery/Other): Utilities
+Amount: 890.75
+Expense added successfully!
+Add another expense? (yes/no): no
+
+--- EXPENSE MANAGEMENT ---
+ 1. Add Expense
+ 2. View All Expenses
+ 3. Expense Summary
+ 4. Back
+Enter your choice (1-4): 2
+
+===== ALL EXPENSES =====
+Description         Category             Amount
+-----------------------------------------------
+Lunch               Food                 250.50
+Auto fare           Travel               120.00
+Electricity bill    Utilities            890.75
+
+--- EXPENSE MANAGEMENT ---
+ 1. Add Expense
+ 2. View All Expenses
+ 3. Expense Summary
+ 4. Back
+Enter your choice (1-4): 3
+
+===== EXPENSE SUMMARY =====
+CATEGORY                   TOTAL
+--------------------------------
+Food                      250.50
+Travel                    120.00
+Utilities                 890.75
+--------------------------------
+GRAND TOTAL              1261.25
+
+Highest spending category: Utilities (890.75)
+Highest single expense: Electricity bill (890.75)
+Lowest single expense: Auto fare (120.00)
+
+--- EXPENSE MANAGEMENT ---
+ 1. Add Expense
+ 2. View All Expenses
+ 3. Expense Summary
+ 4. Back
+Enter your choice (1-4): 4
+
+==============================================
+  EXPENSE | ATTENDANCE | GRADING | BILLING
+==============================================
+ 1. Expense Management
+ 2. Attendance Management
+ 3. Grading System
+ 4. Billing System
+ 5. View Reports
+ 6. Exit
+----------------------------------------------
+Enter your choice (1-6): 2
+
+--- ATTENDANCE MANAGEMENT ---
+ 1. Mark Attendance
+ 2. Attendance Summary
+ 3. Highest and Lowest Attendance
+ 4. Back
+Enter your choice (1-4): 1
+
+===== MARK ATTENDANCE =====
+Enter total working days: 40
+Enter name: Asha
+Enter roll number: 1
+Enter ID: A01
+Enter days present: 38
+Attendance saved successfully!
+Attendance: 95.00%
+Status: Eligible
+Add another person? (yes/no): yes
+Enter name: Ravi
+Enter roll number: 2
+Enter ID: A02
+Enter days present: 27
+Attendance saved successfully!
+Attendance: 67.50%
+Status: Warning
+Add another person? (yes/no): yes
+Enter name: Meena
+Enter roll number: 3
+Enter ID: A03
+Enter days present: 20
+Attendance saved successfully!
+Attendance: 50.00%
+Status: Shortage
+Add another person? (yes/no): no
+
+--- ATTENDANCE MANAGEMENT ---
+ 1. Mark Attendance
+ 2. Attendance Summary
+ 3. Highest and Lowest Attendance
+ 4. Back
+Enter your choice (1-4): 2
+
+===== ATTENDANCE SUMMARY =====
+Name           Roll No   Total Days  Present   Attendance %   Status
+------------------------------------------------------------------------
+Asha           1         40          38        95.00          Eligible
+Ravi           2         40          27        67.50          Warning
+Meena          3         40          20        50.00          Shortage
+
+Summary:
+Total people       : 3
+Average attendance : 70.83%
+Highest            : Asha (95.00%)
+Lowest             : Meena (50.00%)
+Eligible: 1 | Warning: 1 | Shortage: 1
+
+--- ATTENDANCE MANAGEMENT ---
+ 1. Mark Attendance
+ 2. Attendance Summary
+ 3. Highest and Lowest Attendance
+ 4. Back
+Enter your choice (1-4): 4
+
+==============================================
+  EXPENSE | ATTENDANCE | GRADING | BILLING
+==============================================
+ 1. Expense Management
+ 2. Attendance Management
+ 3. Grading System
+ 4. Billing System
+ 5. View Reports
+ 6. Exit
+----------------------------------------------
+Enter your choice (1-6): 3
+
+--- GRADING SYSTEM ---
+ 1. Add Students and Marks
+ 2. View All Students
+ 3. Class Summary
+ 4. Back
+Enter your choice (1-4): 1
+
+===== GRADING SYSTEM =====
+How many students do you want to enter? 1
+Enter number of subjects (default 5): 
+
+Student 1
+Enter student name: Asha
+Enter roll number: 1
+Enter 5 marks separated by spaces: 92 88 79 85 95
+
+=========== REPORT CARD ============
+Student     : Asha
+Roll Number : 1
+------------------------------------
+Subject             Marks
+Subject 1              92
+Subject 2              88
+Subject 3              79
+Subject 4              85
+Subject 5              95
+------------------------------------
+Total       : 439 / 500
+Average     : 87.80
+Percentage  : 87.80%
+Grade       : A
+Result      : PASS
+====================================
+
+===== CLASS SUMMARY =====
+Total students: 1
+Class average: 87.80%
+Topper: Asha (87.80%)
+Pass count: 1
+Fail count: 0
+
+--- GRADING SYSTEM ---
+ 1. Add Students and Marks
+ 2. View All Students
+ 3. Class Summary
+ 4. Back
+Enter your choice (1-4): 4
+
+==============================================
+  EXPENSE | ATTENDANCE | GRADING | BILLING
+==============================================
+ 1. Expense Management
+ 2. Attendance Management
+ 3. Grading System
+ 4. Billing System
+ 5. View Reports
+ 6. Exit
+----------------------------------------------
+Enter your choice (1-6): 4
+
+--- BILLING SYSTEM ---
+ 1. Generate Invoice
+ 2. Back
+Enter your choice (1-2): 1
+
+===== GENERATE INVOICE =====
+Enter customer name: Rohan Sharma
+Enter item name (type done to stop): Notebook
+Enter unit price: 45
+Enter quantity: 10
+Item added successfully.
+Enter item name (type done to stop): Backpack
+Enter unit price: 850
+Enter quantity: 2
+Item added successfully.
+Enter item name (type done to stop): Pen Box
+Enter unit price: 120
+Enter quantity: 5
+Item added successfully.
+Enter item name (type done to stop): done
+
+======================= INVOICE =======================
+Bill No  : B-0001    Date: 2026-11-16
+Customer : Rohan Sharma
+-------------------------------------------------------
+Item                Price   Qty       Total
+-------------------------------------------------------
+Notebook            45.00    10      450.00
+Backpack           850.00     2     1700.00
+Pen Box            120.00     5      600.00
+-------------------------------------------------------
+Subtotal                                        2750.00
+Discount (5%)                                   -137.50
+Taxable amount                                  2612.50
+Tax (18%)                                        470.25
+-------------------------------------------------------
+GRAND TOTAL                                     3082.75
+=======================================================
+Thank you for your purchase!
+
+--- BILLING SYSTEM ---
+ 1. Generate Invoice
+ 2. Back
+Enter your choice (1-2): 2
+
+==============================================
+  EXPENSE | ATTENDANCE | GRADING | BILLING
+==============================================
+ 1. Expense Management
+ 2. Attendance Management
+ 3. Grading System
+ 4. Billing System
+ 5. View Reports
+ 6. Exit
+----------------------------------------------
+Enter your choice (1-6): 5
+
+--- REPORTS ---
+ 1. Expense Report
+ 2. Attendance Report
+ 3. Grading Report
+ 4. Billing Report
+ 5. All Reports
+ 6. Back
+Enter your choice (1-6): 5
+
+======================================
+          ALL SYSTEM REPORTS
+======================================
+
+========== EXPENSE REPORT ==========
+Description       Category           Amount
+-------------------------------------------
+Lunch             Food               250.50
+Auto fare         Travel             120.00
+Electricity bill  Utilities          890.75
+-------------------------------------------
+Grand Total: 1261.25
+
+Category-wise Total:
+Food                  250.50
+Travel                120.00
+Utilities             890.75
+
+========== ATTENDANCE REPORT ==========
+Name           Roll No     Percentage    Status
+-------------------------------------------------------
+Asha           1           95.00         Eligible
+Ravi           2           67.50         Warning
+Meena          3           50.00         Shortage
+
+Total people: 3
+Average attendance: 70.83%
+Highest attendance: Asha (95.00%)
+Lowest attendance: Meena (50.00%)
+
+========== GRADING REPORT ==========
+Name              Roll No     Percentage    Grade   Result
+-----------------------------------------------------------------
+Asha              1           87.80         A       PASS
+
+Total students: 1
+Class average: 87.80%
+Topper: Asha (87.80%)
+Pass count: 1
+Fail count: 0
+
+========== BILLING REPORT ==========
+
+Bill No: B-0001   Date: 2026-11-16
+Customer: Rohan Sharma
+---------------------------------------------
+Item                 Qty       Total
+---------------------------------------------
+Notebook              10      450.00
+Backpack               2     1700.00
+Pen Box                5      600.00
+---------------------------------------------
+Subtotal: 2750.00
+Discount: 137.50
+Tax: 470.25
+Grand Total: 3082.75
+
+Total invoices: 1
+Total sales: 3082.75
+
+======================================
+       ALL REPORTS COMPLETED
+======================================
+
+Export this report to a .txt file? (yes/no): no
+
+--- REPORTS ---
+ 1. Expense Report
+ 2. Attendance Report
+ 3. Grading Report
+ 4. Billing Report
+ 5. All Reports
+ 6. Back
+Enter your choice (1-6): 6
+
+==============================================
+  EXPENSE | ATTENDANCE | GRADING | BILLING
+==============================================
+ 1. Expense Management
+ 2. Attendance Management
+ 3. Grading System
+ 4. Billing System
+ 5. View Reports
+ 6. Exit
+----------------------------------------------
+Enter your choice (1-6): 6
+
+Thank you for using the system. Goodbye!
+Session ended. 8 record(s) entered (data is not saved after exit).
